@@ -18,7 +18,7 @@
 
 此处使用ba.sh短链
 ```bash
-bash <(wget -qO- https://ba.sh/gZnH)
+bash <(wget -qO- https://ba.sh/QgcA)
 ```
 
 ## 📋 测试网站
