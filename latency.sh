@@ -1226,7 +1226,7 @@ declare -A DNS_SERVERS=(
 # 测试文件URL列表（用于下载速度测试）
 declare -A DOWNLOAD_TEST_URLS=(
     ["Cloudflare"]="https://speed.cloudflare.com/__down?bytes=100000000"
-    ["GitHub"]="https://github.com/szalony9szymek/large/releases/download/free/large"
+    ["GitHub"]="https://github.com/NetworkNeighborhood/Marble/releases/download/G1.1/marble-G1.1.en-US.win64.zip"
     ["Microsoft"]="https://vscode.download.prss.microsoft.com/dbazure/download/stable/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/code_1.106.3-1764110892_amd64.deb"
     ["Google"]="https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
 )
