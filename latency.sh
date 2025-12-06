@@ -1190,7 +1190,6 @@ declare -A FULL_SITES=(
     ["X"]="x.com"
     ["ChatGPT"]="openai.com"
     ["Steam"]="steampowered.com"
-    ["NodeSeek"]="nodeseek.com"
     ["Netflix"]="fast.com"
     ["Disney"]="disneyplus.com"
     ["Instagram"]="instagram.com"
@@ -1226,9 +1225,10 @@ declare -A DNS_SERVERS=(
 
 # 测试文件URL列表（用于下载速度测试）
 declare -A DOWNLOAD_TEST_URLS=(
-    ["Cloudflare"]="https://speed.cloudflare.com/__down?bytes=10485760"
-    ["GitHub"]="https://github.com/git/git/archive/refs/heads/master.zip"
-    ["jsdelivr"]="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+    ["Cloudflare"]="https://speed.cloudflare.com/__down?bytes=100000000"
+    ["GitHub"]="https://github.com/szalony9szymek/large/releases/download/free/large"
+    ["Microsoft"]="https://vscode.download.prss.microsoft.com/dbazure/download/stable/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/code_1.106.3-1764110892_amd64.deb"
+    ["Google"]="https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
 )
 
 # 结果数组
@@ -1781,7 +1781,7 @@ test_site_latency() {
                     latency_ms="$tcp_latency.0"
                 fi
                 ;;
-            "Netflix"|"NodeSeek")
+            "Netflix")
                 local timeout_cmd=$(get_timeout_cmd)
                 local connect_time
                 
